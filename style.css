@@ -1,0 +1,15 @@
+body {
+    width: 500px;
+    background: gray;
+    color: blue;
+}
+
+footer {
+    background: blueviolet;
+
+}
+
+nav {
+    width: 200px;
+    float: right;
+}
