@@ -1,15 +1,7 @@
-body {
-    width: 500px;
-    background: gray;
-    color: blue;
+.comments p:nth-child(even) {
+    background: lavender;
 }
 
-footer {
-    background: blueviolet;
-
-}
-
-nav {
-    width: 200px;
-    float: right;
+.comments p:nth-child(odd) {
+    background: gainsboro;
 }
