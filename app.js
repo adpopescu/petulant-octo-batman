@@ -4,7 +4,6 @@
 var main  = function() {
     "use strict";
 
-    window.alert("Hello JavaScript");
 };
 
 $(document).ready(main);
