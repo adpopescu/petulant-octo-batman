@@ -3,6 +3,17 @@
  */
 var main = function () {
     "use strict";
+    var $newUL = $("<ul>");
+    var $newParagraphElement = $("<p>");
+    var $listItemOne = $("<li>").text("this is the firts list item");
+    var $listItemTwo = $("<li>").text("second");
+    var $listItemThree = $("<li>").text("last");
+
+    $newUL.append($listItemOne);
+    $newUL.append($listItemTwo);
+    $newUL.append($listItemThree);
+
+    $newParagraphElement.text("this is a paragraph");
 
     var addCommentFromINputBox = function () {
         var $new_comment;
@@ -14,15 +25,17 @@ var main = function () {
             $new_comment.fadeIn();
             $(".comment-input input").val("");
         }
-    }
+    };
 
     $(".comment-input button").on("click", function (event) {
-        addCommentFromINputBox()
+        addCommentFromINputBox();
+        $("footer").append($newParagraphElement);
     });
 
     $(".comment-input input").on("keypress", function(event) {
         if (event.keyCode === 13) {
-            addCommentFromINputBox()
+            addCommentFromINputBox();
+            $("main").append($newUL);
         }
     });
 };
